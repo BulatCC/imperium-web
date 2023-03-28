@@ -7,10 +7,7 @@ export const productCardoptions = () => {
     productCards[0] && productCards.forEach(card => {
         const cardImg = card.querySelector('[data-product-card-img]');
         const previews = card.querySelectorAll('[data-choice]');
-
         const showAllButton = card.querySelector('[data-show-all-preview]');
-        console.log(showAllButton);
-
 
         previews.forEach((preview, i) => {
             // скрывает не поместившиеся превьюшки
