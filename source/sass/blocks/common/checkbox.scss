@@ -43,7 +43,7 @@
 }
 
 .checkbox_input:checked + label::before {
-    background: url('/img/svg/check-mark.svg') no-repeat, var(--color-default-white);
+    background: url('../img/svg/check-mark.svg') no-repeat, var(--color-default-white);
     background-position: center;
 }
 
