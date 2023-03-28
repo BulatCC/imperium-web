@@ -1,0 +1,24 @@
+.button {
+    display: inline-block;
+    padding: 1.1rem 2rem;
+    min-width: 15rem;
+    text-transform: uppercase;
+    background-color: var(--color-burgundy);
+    font-size: 1.3rem;
+    color: var(--color-default-white);
+    text-align: center;
+    transition: var(--default-transition);
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &--white {
+        background-color: var(--color-default-white);
+        color: var(--color-dark-blue);
+    }
+
+    &--bordered {
+        border: 0.1rem solid var(--color-dark-blue);
+    }
+}

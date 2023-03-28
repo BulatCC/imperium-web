@@ -1,0 +1,36 @@
+.progress-number {
+    display: flex;
+}
+
+.progress-number_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.9rem;
+    height: 1.9rem;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--color-dark-green);
+    border-radius: 50%;
+    border: 0.1rem solid var(--color-dark-green);
+
+    & + .progress-number_item {
+        position: relative;
+        margin-left: 2.1rem;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 1.8rem;
+            height: 0.1rem;
+            background-color: var(--color-dark-green);
+            left: -2.1rem;
+        }
+    }
+
+
+    &.active {
+        background-color: var(--color-dark-green);
+        color: var(--color-default-white);
+    }
+}

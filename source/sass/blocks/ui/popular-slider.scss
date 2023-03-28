@@ -1,0 +1,21 @@
+.popular-slider {
+
+
+    .popular-slider_container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2.4rem;
+    }
+
+    .popular-slider_title {
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    .popular-slider_slider {
+        @include vp-500 {
+            margin-right: -2rem;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+include nav
+
+article.side-menu(data-side-menu)
+    .side-menu_wrapper
+        .side-menu_container
+            .logo.side-menu_logo Logo
+            button.burger.side-menu_burger.hidden-mobile(data-burger-side-menu)
+                span.burger_open
+                span.burger_close
+        .side-menu_links-container
+            span.side-menu_city Дмитров
+            a(href="tel:+79256455711").side-menu_link 8 (925) 645-57-11
+            a(href="tel:+74999999999").side-menu_link 8 (499) 999-99-99
+        +nav('side-menu_nav')
+        .text-input.side-menu_text-input(data-search-side-menu)
+            button(type="button").text-input_button
+                img(src="img/svg/search.svg", alt="search").text-input_img
+            input(type="text" placeholder="Поиск").text-input_input(data-search-side-menu-input)
+        .side-menu_links-bottom
+            a(href="#").side-menu_link О компании
+            a(href="#").side-menu_link Отзывы
+            a(href="#").side-menu_link Коммерческим покупателям
+            a(href="#").side-menu_link Контакты

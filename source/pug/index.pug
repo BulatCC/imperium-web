@@ -1,0 +1,13 @@
+extends ./layout/layout
+
+block variables
+  - var title = 'Imperium web'
+
+block content
+    main.main
+        .block-with-side-menu
+            include ./components/ui/side-menu.pug
+            include ./components/ui/main-slider.pug
+        include ./components/ui/popular.pug
+        include ./components/ui/popular-slider.pug
+        include ./components/ui/checkbox-block.pug

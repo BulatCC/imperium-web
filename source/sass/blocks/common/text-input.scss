@@ -1,0 +1,36 @@
+.text-input {
+    display: flex;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    position: relative;
+    overflow: hidden;
+    border: 0.1rem solid var(--color-dark-green);
+    border-radius: 2rem;
+    min-height: 3.2rem;
+}
+
+.text-input_button {
+    padding: unset;
+    min-width: 1.6rem;
+    margin-right: 1.8rem;
+    background-color: var(--color-transparent);
+    transition: var(--default-transition);
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.text-input_img {
+    width: 1.6rem;
+}
+
+.text-input_input {
+    max-width: 12.5rem;
+    background-color: var(--color-transparent);
+    border: none;
+    outline: none;
+
+    &::placeholder {
+        opacity: 0.5;
+    }
+}

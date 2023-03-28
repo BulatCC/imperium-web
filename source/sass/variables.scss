@@ -1,0 +1,29 @@
+:root {
+    --default-transition: 0.3s ease;
+
+    // Colors
+    // ---------------------------------
+    --color-default-white: #ffffff;
+    --color-burgundy: #B84C74;
+    --color-dark-green: #417A82;
+    --color-light-green: #F2F6F7;
+    --color-medium-green: #E3F6F5;
+    --color-hover-green: #f7fcfc;
+    --color-dark-blue: #052E4C;
+    --color-pale-blue: #cdd5db;
+    --color-overlay: rgba(0, 0, 0, 0.5);
+    --color-transparent: rgba(255,255,255,0);
+}
+
+// Viewports
+// ---------------------------------
+
+$vp-320: 320px;
+$vp-375: 375px;
+$vp-500: 500px;
+$vp-768: 768px;
+$vp-1024: 1024px;
+$vp-1280: 1280px;
+$vp-1440: 1440px;
+$vp-1920: 1920px;
+

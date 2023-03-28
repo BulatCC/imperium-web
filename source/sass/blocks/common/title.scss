@@ -1,0 +1,22 @@
+.title {
+    font-family: 'Cormorant-italic';
+    font-size: 6.2rem;
+    font-weight: 700;
+
+    @include vp-767 {
+        font-size: 4rem;
+    }
+
+    &--xxl {
+        position: absolute;
+        font-size: 30rem;
+        color: var(--color-default-white);
+        opacity: 0.5;
+        font-weight: 300;
+        line-height: 1;
+
+        @include vp-767 {
+            font-size: 9.9rem;
+        }
+    }
+}

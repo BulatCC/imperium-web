@@ -1,0 +1,13 @@
+.info-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--color-default-white);
+    border-radius: 50%;
+    color: var(--color-burgundy);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Cormorant';
+}

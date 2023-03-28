@@ -1,0 +1,141 @@
+.product-card {
+    padding: 1.6rem 1.6rem 4rem 1.6rem;
+    transition: var(--default-transition);
+
+    @include vp-767 {
+        padding: 0;
+    }
+
+    &:hover {
+        background-color: var(--color-hover-green);
+    }
+}
+
+.product-card_wrapper {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: 22.8rem;
+    margin-bottom: 2.4rem;
+}
+
+.product-card_info {
+    padding: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.product-card_advant {
+    width: 3rem;
+    height: 3rem;
+}
+
+.product-card_badge {
+    margin-left: auto;
+}
+
+.product-card_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.product-card_list {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.product-card_list-item {
+    position: relative;
+    width: 14.27%;
+    height: 3.2rem;
+    cursor: pointer;
+    transition: var(--default-transition);
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &.active {
+        &::before {
+            content: '';
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 0.8rem;
+            height: 0.8rem;
+            border: 0.1rem solid var(--color-dark-green);
+            border-radius: 50%;
+        }
+    }
+
+    &--full {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-dark-green);
+    }
+}
+
+.product-card_list-item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-card_title {
+    margin-bottom: 2.4rem;
+    font-weight: 400;
+}
+
+.product-card_price {
+    margin-bottom: 1.6rem;
+    font-size: 2rem;
+    font-family: 'Cormorant';
+    font-style: italic;
+}
+
+.product-card_price-actual,
+.product-card_price-old {
+    font-size: 3.2rem;
+    font-family: 'Cormorant';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.product-card_price-old {
+    position: relative;
+    font-weight: 400;
+    font-size: 2.2rem;
+    color: var(--color-pale-blue);
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 7rem;
+        height: 0.1rem;
+        top: 1rem;
+        left: 0;
+        background-color: var(--color-burgundy);
+        transform: rotate(-29deg);
+    }
+}
+
+.product-card_bottom-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.product-card_cart {
+    margin-left: 1.6rem;
+    transform: scale(1.7);
+}

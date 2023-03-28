@@ -1,0 +1,43 @@
+.cart {
+    position: relative;
+    padding: 1.4rem 1.3rem 1.1rem 0.85rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--color-default-white);
+    border-radius: 50%;
+
+    @include vp-767 {
+        padding: 1rem 0 0 0;
+    }
+}
+
+.cart_img {
+    width: 1.9rem;
+    height: 1.5rem;
+
+    @include vp-767 {
+        width: 2.8rem;
+        height: 2.2rem;
+    }
+}
+
+.cart_number {
+    position: absolute;
+    right: 1rem;
+    top: 0.5rem;
+    z-index: 1;
+    font-size: 1.2rem;
+    color: var(--color-default-white);
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: -0.5rem;
+        top: -0.1rem;
+        width: 1.6rem;
+        height: 1.6rem;
+        z-index: -1;
+        background-color: var(--color-burgundy);
+        border-radius: 50%;
+    }
+}

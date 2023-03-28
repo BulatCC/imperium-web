@@ -1,0 +1,7 @@
+.main {
+    margin-top: -15.2rem;
+
+    @include vp-767 {
+        margin-top: 0;
+    }
+}

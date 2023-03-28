@@ -1,0 +1,8 @@
+@include font-face('Cormorant', '../fonts/Cormorant-Bold', 700);
+@include font-face('Cormorant', '../fonts/Cormorant-Regular', 400);
+@include font-face('Cormorant-italic', '../fonts/Cormorant-BoldItalic', 700, 'italic');
+@include font-face('Cormorant-italic', '../fonts/Cormorant-Italic', 400, 'italic');
+@include font-face('CormorantInfant', '../fonts/CormorantInfant-Light', 300);
+@include font-face('CormorantInfant', '../fonts/CormorantInfant-Regular', 400);
+@include font-face('CormorantInfant', '../fonts/CormorantInfant-SemiBoldItalic', 600);
+@include font-face('PTSans', '../fonts/PTSans-Regular', 400);

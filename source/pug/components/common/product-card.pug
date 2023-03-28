@@ -1,0 +1,23 @@
+mixin product-card(data)
+    .product-card(data-produt-card)
+        .product-card_wrapper
+            .product-card_info
+                img(src= 'img/product-card-advant-1.png').product-card_advant
+                img(src= 'img/svg/product-card-advant-2.svg').product-card_advant
+                img(src= 'img/svg/product-card-advant-3.svg').product-card_advant
+                .info-badge.product-card_badge -10%
+            img(src= `img/${data.img}` data-product-card-img).product-card_img
+            ul.product-card_list
+                each value in data.previews
+                    li.product-card_list-item(data-choice= value, class= value.selected ? 'active' : '')
+                        img(src= `img/${value.img}`).product-card_list-item-img
+                li.product-card_list-item.product-card_list-item--full.hidden(data-show-all-preview)
+                    img(src= 'img/svg/arrow-down.svg')
+        h3.product-card_title Вертикальные жалюзи «Lorem»
+        p.product-card_price от
+            span.product-card_price-actual   1200₽
+            span.product-card_price-old   1000₽
+        .product-card_bottom-wrap
+            button.button.button--white.button--bordered оформить заявку
+            img(src="img/svg/cart.svg", alt="cart").product-card_cart
+

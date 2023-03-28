@@ -1,0 +1,45 @@
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+@import "../../node_modules/swiper/swiper.scss";
+
+// Global
+// ---------------------------------
+
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+@import "global/header";
+@import "global/main";
+
+// Common
+// ---------------------------------
+@import "blocks/common/burger";
+@import "blocks/common/logo";
+@import "blocks/common/text-input";
+@import "blocks/common/button";
+@import "blocks/common/cart";
+@import "blocks/common/slider";
+@import "blocks/common/title";
+@import "blocks/common/content";
+@import "blocks/common/product-card";
+@import "blocks/common/info-badge";
+@import "blocks/common/progress-number";
+@import "blocks/common/checkbox";
+
+// Ui
+// ---------------------------------
+@import "blocks/ui/block-with-side-menu";
+@import "blocks/ui/side-menu";
+@import "blocks/ui/nav";
+@import "blocks/ui/main-slider";
+@import "blocks/ui/popular";
+@import "blocks/ui/popular-slider";
+@import "blocks/ui/checkbox-block";
+
+
+// ---------------------------------

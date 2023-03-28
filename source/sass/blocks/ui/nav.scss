@@ -1,0 +1,26 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: -0.5rem;
+}
+
+.nav_link {
+    display: flex;
+    align-items: center;
+    color: var(--color-dark-green);
+    padding: 0.5rem;
+
+    & + .nav_link {
+        margin-top: 1.1rem;
+    }
+
+    &--burgundy {
+        color: var(--color-burgundy);
+    }
+}
+
+.nav_icon {
+    margin-right: 1.6rem;
+    max-width: 2.5rem;
+    height: auto;
+}

@@ -1,0 +1,107 @@
+include ../common/product-card
+-
+    const cardData = {
+        img: 'roll-green.jpg',
+        previews: [{
+            id: 1,
+            imgLink: 'img/roll-yellow.jpg',
+            selected: false,
+            img: 'roll-preview-yellow.jpg'
+        },
+        {
+            id: 2,
+            imgLink: 'img/roll-green.jpg',
+            selected: true,
+            img: 'roll-preview-green.jpg'
+        },
+        {
+            id: 3,
+            imgLink: 'img/roll-grey.jpg',
+            selected: false,
+            img: 'roll-preview-grey.jpg'
+        },
+        {
+            id: 4,
+            imgLink: 'img/roll-white.jpg',
+            selected: false,
+            img: 'roll-preview-white.jpg'
+        },
+        {
+            id: 5,
+            imgLink: 'img/roll-yellow.jpg',
+            selected: false,
+            img: 'roll-preview-yellow.jpg'
+        },
+        {
+            id: 6,
+            imgLink: 'img/roll-green.jpg',
+            selected: false,
+            img: 'roll-preview-green.jpg'
+        },
+        {
+            id: 7,
+            imgLink: 'img/roll-grey.jpg',
+            selected: false,
+            img: 'roll-preview-grey.jpg'
+        },
+        {
+            id: 8,
+            imgLink: 'img/roll-white.jpg',
+            selected: false,
+            img: 'roll-preview-white.jpg'
+        },
+        {
+            id: 9,
+            imgLink: 'img/roll-yellow.jpg',
+            selected: false,
+            img: 'roll-preview-yellow.jpg'
+        }]
+    };
+
+    const cardDataSmall = {
+        img: 'roll-yellow.jpg',
+        previews: [{
+            id: 1,
+            imgLink: 'img/roll-yellow.jpg',
+            selected: true,
+            img: 'roll-preview-yellow.jpg'
+        },
+        {
+            id: 2,
+            imgLink: 'img/roll-green.jpg',
+            selected: false,
+            img: 'roll-preview-green.jpg'
+        },
+        {
+            id: 3,
+            imgLink: 'img/roll-white.jpg',
+            selected: false,
+            img: 'roll-preview-white.jpg'
+        }]
+    };
+
+section.popular-slider.content
+    .container
+        .popular-slider_container
+            h2.popular-slider_title Лучшие предложения
+            .slider_buttons-container
+                .slider_buttons
+                    button.swiper-button-prev.slider_button.slider_button--prev.hidden-mobile(data-popular-slider-prev)
+                        img(src="img/svg/prev.svg" alt="prev slide")
+                    .swiper-pagination.slider_pagination(data-popular-slider-pagination)
+                    button.swiper-button-next.slider_button.slider_button--next.hidden-mobile(data-popular-slider-next)
+                        img(src="img/svg/next.svg" alt="prev slide")
+        .swiper.popular-slider_slider(data-popular-slider)
+            .swiper-wrapper
+                .swiper-slide
+                    +product-card(cardData)
+                .swiper-slide
+                    +product-card(cardDataSmall)
+                .swiper-slide
+                    +product-card(cardDataSmall)
+                .swiper-slide
+                    +product-card(cardData)
+                .swiper-slide
+                    +product-card(cardDataSmall)
+                .swiper-slide
+                    +product-card(cardDataSmall)

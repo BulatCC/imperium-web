@@ -1,0 +1,19 @@
+section.content
+    .container
+        .checkbox-block
+            p.checkbox-block_text Ваш помощник в выборе солнцезащиты
+            .checkbox-block_wrap
+
+                h2.checkbox-block_title.hidden-mobile Для какого помещения выбираете Lorem?
+                ul.progress-number.checkbox-block_progress-number
+                    li.progress-number_item.active 1
+                    li.progress-number_item 2
+                    li.progress-number_item 3
+                .checkbox-block_columns
+                    - for (var i = 0; i < 12; ++i) {
+                        .checkbox
+                            input(type="checkbox" id=i name=i).checkbox_input
+                            label(for=i) Веранда, терраса, уличное пространство
+                    - }
+                button.button.button--white Далее
+
